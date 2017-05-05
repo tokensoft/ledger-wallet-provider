@@ -1,5 +1,7 @@
 # LedgerWalletProvider
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Neufund/ledger-wallet-provider.svg)](https://greenkeeper.io/)
+
 The LedgerWalletProvider lets your dapp communicate directly with a user's [Ledger Nano S](https://www.ledgerwallet.com/products/ledger-nano-s) using the [zero client provider engine](https://github.com/MetaMask/provider-engine) developed by Metamask.
 
 Instead of setting your web3's provider to an HttpProvider or IpcProvider, you can create a custom provider using the [provider engine](https://github.com/MetaMask/provider-engine) and tell it to use LedgerWalletProvider for all id management requests (e.g getAccounts, approveTransaction and signTransaction). This way, your users can confirm your dapp's transactions directly from their Ledger Nano S!
