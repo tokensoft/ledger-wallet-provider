@@ -61,16 +61,4 @@ All paths must start with `44'/60'` or `44'/61'`.
 
 It is your responsibility to show the user a friendly message, instructing them to do so. In order to detect when they have completed these steps, you can poll `web3.eth.getAccounts` which will return `undefined` until the Ledger Wallet is accessible.
 
-If you would like to detect whether or not a user's browser supports U2F, you can call the `isSupported` convenience method on the `ledgerWalletSubProvider`:
-
-```
-var LedgerWalletSubproviderFactory = require('ledger-wallet-provider').default;
-
-var ledgerWalletSubProvider = LedgerWalletSubproviderFactory();
-ledgerWalletSubProvider.isSupported()
-    .then(function(isSupported) {
-        console.log(isSupported ? 'Yes' : 'No');
-    });
-```
-
 This might be helpful if you want to conditionally show Ledger Nano S support to users who could actually take advantage of it.
