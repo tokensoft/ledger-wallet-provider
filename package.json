@@ -32,6 +32,6 @@
     "ledgerco": "^1.1.2",
     "promise-timeout": "^1.1.1",
     "u2f-api": "^0.0.9",
-    "web3-provider-engine": "^11.0.0"
+    "web3-provider-engine": "https://github.com/tokensoft/provider-engine"
   }
 }
